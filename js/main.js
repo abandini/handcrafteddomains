@@ -234,6 +234,27 @@ window.closeDomainModal = function() {
     modal.style.display = 'none';
 };
 
+// Function to handle domain offers
+window.makeOffer = function(domainName) {
+    // Set the hidden field value
+    document.getElementById('domain_interest').value = domainName;
+    
+    // Also set the visible domain field value for user reference
+    document.getElementById('domain').value = domainName;
+    
+    // Scroll to the contact form
+    const contactForm = document.querySelector('.contact-form-container');
+    if (contactForm) {
+        contactForm.scrollIntoView({ behavior: 'smooth' });
+        
+        // Add a visual highlight to the form to draw attention
+        contactForm.classList.add('highlight-form');
+        setTimeout(() => {
+            contactForm.classList.remove('highlight-form');
+        }, 1500);
+    }
+};
+
 // Initialize all functionality when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Category filtering

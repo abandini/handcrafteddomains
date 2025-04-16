@@ -305,6 +305,17 @@ section > .container {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+@keyframes highlight-pulse {
+    0% { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+    50% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.6); }
+    100% { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+}
+
+.highlight-form {
+    animation: highlight-pulse 1.5s ease;
 }
 
 .contact-form {

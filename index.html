@@ -88,7 +88,7 @@
                         <span>Perfect for: Neurotechnology startups, brain health companies</span>
                     </div>
                     <div class="domain-actions">
-                        <a href="mailto:contact@example.com?subject=Interest%20in%2040hz.ai" class="button-offer">Make Offer</a>
+                        <button onclick="makeOffer('40hz.ai')" class="button-offer">Make Offer</button>
                         <button onclick="showDomainDetails('40hz.ai')" class="button-learn">Learn More</button>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                         <span>Perfect for: Anti-aging clinics, longevity research, wellness brands</span>
                     </div>
                     <div class="domain-actions">
-                        <a href="mailto:contact@example.com?subject=Interest%20in%20agingundone.com" class="button-offer">Make Offer</a>
+                        <button onclick="makeOffer('agingundone.com')" class="button-offer">Make Offer</button>
                         <button onclick="showDomainDetails('agingundone.com')" class="button-learn">Learn More</button>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                         <span>Perfect for: Senior cannabis education, wellness communities, CBD brands</span>
                     </div>
                     <div class="domain-actions">
-                        <a href="mailto:contact@example.com?subject=Interest%20in%20blazinboomers.com" class="button-offer">Make Offer</a>
+                        <button onclick="makeOffer('blazinboomers.com')" class="button-offer">Make Offer</button>
                         <button onclick="showDomainDetails('blazinboomers.com')" class="button-learn">Learn More</button>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                         <span>Perfect for: Hot sauce manufacturers, specialty food brands</span>
                     </div>
                     <div class="domain-actions">
-                        <a href="mailto:contact@example.com?subject=Interest%20in%20jawmelter.com" class="button-offer">Make Offer</a>
+                        <button onclick="makeOffer('jawmelter.com')" class="button-offer">Make Offer</button>
                         <button onclick="showDomainDetails('jawmelter.com')" class="button-learn">Learn More</button>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         <span>Perfect for: Craft breweries, local beverage brands</span>
                     </div>
                     <div class="domain-actions">
-                        <a href="mailto:contact@example.com?subject=Interest%20in%20CLEVELANDKOLSCH.COM" class="button-offer">Make Offer</a>
+                        <button onclick="makeOffer('CLEVELANDKOLSCH.COM')" class="button-offer">Make Offer</button>
                         <button onclick="showDomainDetails('CLEVELANDKOLSCH.COM')" class="button-learn">Learn More</button>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                         <span>Perfect for: Quantum technology companies, sensor manufacturers</span>
                     </div>
                     <div class="domain-actions">
-                        <a href="mailto:contact@example.com?subject=Interest%20in%20quantumsensors.io" class="button-offer">Make Offer</a>
+                        <button onclick="makeOffer('quantumsensors.io')" class="button-offer">Make Offer</button>
                         <button onclick="showDomainDetails('quantumsensors.io')" class="button-learn">Learn More</button>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                         <span>Perfect for: Robotics companies, medical device manufacturers</span>
                     </div>
                     <div class="domain-actions">
-                        <a href="mailto:contact@example.com?subject=Interest%20in%20wearablerobots.io" class="button-offer">Make Offer</a>
+                        <button onclick="makeOffer('wearablerobots.io')" class="button-offer">Make Offer</button>
                         <button onclick="showDomainDetails('wearablerobots.io')" class="button-learn">Learn More</button>
                     </div>
                 </div>
@@ -203,6 +203,7 @@
             <p>Our domain specialists are here to help you find the perfect match for your brand.</p>
             <div class="contact-form-container">
                 <form action="https://getform.io/f/bolmoqya" method="POST" class="contact-form">
+                    <input type="hidden" id="domain_interest" name="domain_interest" value="">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
