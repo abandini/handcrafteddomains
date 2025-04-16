@@ -1035,6 +1035,21 @@ window.makeOffer = function(domainName) {
 
 // Initialize all functionality when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle form submission and redirect
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            // Store the form data in localStorage to potentially use it on the thank you page
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                domain: document.getElementById('domain').value,
+                message: document.getElementById('message').value,
+                domain_interest: document.getElementById('domain_interest').value
+            };
+            localStorage.setItem('formSubmission', JSON.stringify(formData));
+        });
+    }
     // Category filtering
     const categoryButtons = document.querySelectorAll('.category-button');
     const domainCards = document.querySelectorAll('.domain-card');

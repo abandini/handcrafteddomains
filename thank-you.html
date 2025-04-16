@@ -120,5 +120,35 @@
     </footer>
 
     <script src="js/main.js" defer></script>
+    <script>
+        // Check if we have form submission data in localStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            const formData = localStorage.getItem('formSubmission');
+            if (formData) {
+                try {
+                    const data = JSON.parse(formData);
+                    // You can use this data to personalize the thank you message if needed
+                    if (data.name) {
+                        const thankYouHeading = document.querySelector('.thank-you-container h1');
+                        if (thankYouHeading) {
+                            thankYouHeading.textContent = `Thank You, ${data.name}!`;
+                        }
+                    }
+                    if (data.domain || data.domain_interest) {
+                        const domainName = data.domain || data.domain_interest;
+                        if (domainName) {
+                            const domainParagraph = document.createElement('p');
+                            domainParagraph.innerHTML = `We've received your inquiry about <strong>${domainName}</strong>. Our team will be in touch soon with more information.`;
+                            document.querySelector('.thank-you-container p').after(domainParagraph);
+                        }
+                    }
+                    // Clear the form data from localStorage
+                    localStorage.removeItem('formSubmission');
+                } catch (e) {
+                    console.error('Error parsing form data:', e);
+                }
+            }
+        });
+    </script>
 </body>
 </html>
