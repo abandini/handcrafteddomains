@@ -416,6 +416,26 @@ section > .container {
     margin: 8px 0;
 }
 
+.footer-links {
+    margin-top: 16px;
+}
+
+.footer-links a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.footer-divider {
+    margin: 0 10px;
+    color: #d1d5db;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
