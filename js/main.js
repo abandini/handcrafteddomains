@@ -1036,10 +1036,20 @@ window.makeOffer = function(domainName) {
 // Initialize all functionality when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Handle form submission and redirect
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            // Store the form data in localStorage to potentially use it on the thank you page
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitFormBtn');
+    
+    if (contactForm && submitBtn) {
+        submitBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Check form validity
+            if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                return;
+            }
+            
+            // Store the form data in localStorage to use on the thank you page
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
@@ -1048,6 +1058,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 domain_interest: document.getElementById('domain_interest').value
             };
             localStorage.setItem('formSubmission', JSON.stringify(formData));
+            
+            // Create FormData object from the form
+            const formDataObj = new FormData(contactForm);
+            
+            // Disable the submit button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            // Submit the form using fetch API
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formDataObj,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                // Redirect to thank you page regardless of response
+                window.location.href = 'thank-you.html';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Still redirect to thank you page on error
+                window.location.href = 'thank-you.html';
+            });
         });
     }
     // Category filtering
