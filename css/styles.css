@@ -115,6 +115,47 @@ section > .container {
     width: 100%;
 }
 
+/* About Teaser Section */
+.about-teaser-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    width: 100%;
+}
+
+.about-teaser-section .section-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #1e3a8a;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-teaser-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-teaser-content p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+.about-teaser-content .button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.about-teaser-content .button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
