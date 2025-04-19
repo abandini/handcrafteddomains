@@ -1,7 +1,15 @@
+# Global rules for all robots
 User-agent: *
 Allow: /
-Sitemap: https://handcrafteddomains.com/sitemap.xml
+Allow: /index.html
+Allow: /more-domains.html
+Allow: /about-us.html
+Allow: /privacy-policy.html
+Disallow: /thank-you.html  # No need to index the thank you page
+Disallow: /admin/  # Prevent indexing of any future admin areas
+Disallow: /css/  # No need to index CSS files
+Disallow: /js/  # No need to index JavaScript files
+Disallow: /images/  # No need to index image files directly
 
-# Prevent indexing of any future admin areas
-User-agent: *
-Disallow: /admin/
+# Specify the location of the sitemap
+Sitemap: https://handcrafteddomains.com/sitemap.xml
