@@ -39,6 +39,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
+        /* Contact Form Section */
+        .contact-section {
+            background-color: #f3f4f6;
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #4b5563;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .highlight-form {
+            animation: highlight 1.5s ease;
+        }
+        
+        @keyframes highlight {
+            0% { box-shadow: 0 0 0 rgba(37, 99, 235, 0); }
+            50% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.5); }
+            100% { box-shadow: 0 0 0 rgba(37, 99, 235, 0); }
+        }
+        
         /* More Domains Page Specific Styles */
         .more-domains-hero {
             background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
@@ -679,7 +705,40 @@
             <div class="cta-banner">
                 <h3>Looking for Something Specific?</h3>
                 <p>Our complete portfolio includes hundreds of premium domains across various industries. If you don't see what you're looking for, contact our domain specialists who can help you find the perfect match for your brand.</p>
-                <a href="index.html#contactForm" class="button">Contact Our Domain Specialists</a>
+                <a href="#contactForm" class="button">Contact Our Domain Specialists</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contactForm" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Make an Offer</h2>
+            <p class="section-subtitle">Interested in a domain? Fill out the form below and our team will get back to you promptly.</p>
+            
+            <div class="contact-form-container">
+                <form id="domainContactForm" action="https://getform.io/f/bolmoqya" method="POST" class="contact-form">
+                    <input type="hidden" id="domain_interest" name="domain_interest" value="">
+                    <input type="hidden" name="_redirect" value="https://handcrafteddomains.com/thank-you.html">
+                    <input type="hidden" name="_next" value="https://handcrafteddomains.com/thank-you.html">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="domain">Domain of Interest</label>
+                        <input type="text" id="domain" name="domain">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="button" id="submitFormBtn" class="button button-primary">Submit Inquiry</button>
+                </form>
             </div>
         </div>
     </section>
@@ -715,6 +774,60 @@
     </div>
 
     <script src="js/main.js" defer></script>
+    <script>
+        // Handle form submission for the domain contact form
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('domainContactForm');
+            const submitBtn = document.getElementById('submitFormBtn');
+            
+            if (contactForm && submitBtn) {
+                submitBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Check form validity
+                    if (!contactForm.checkValidity()) {
+                        contactForm.reportValidity();
+                        return;
+                    }
+                    
+                    // Store the form data in localStorage to use on the thank you page
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        domain: document.getElementById('domain').value,
+                        message: document.getElementById('message').value,
+                        domain_interest: document.getElementById('domain_interest').value
+                    };
+                    localStorage.setItem('formSubmission', JSON.stringify(formData));
+                    
+                    // Create FormData object from the form
+                    const formDataObj = new FormData(contactForm);
+                    
+                    // Disable the submit button and show loading state
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending...';
+                    
+                    // Submit the form using fetch API
+                    fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formDataObj,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        // Redirect to thank you page regardless of response
+                        window.location.href = 'thank-you.html';
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        // Still redirect to thank you page on error
+                        window.location.href = 'thank-you.html';
+                    });
+                });
+            }
+        });
+    </script>
     <script>
         // Domain details for the extended collection
         const extendedDomainDetails = {
@@ -1088,10 +1201,27 @@
             // Close modal if open
             closeDomainModal();
             
-            // Redirect to contact form on index.html with domain parameter
-            window.location.href = `index.html?domain=${encodeURIComponent(domain)}#contactForm`;
+            // Set the domain in the contact form
+            const domainInterestField = document.getElementById('domain_interest');
+            const domainField = document.getElementById('domain');
             
-            // The domain will be processed by the main.js script when the index page loads
+            if (domainInterestField) domainInterestField.value = domain;
+            if (domainField) domainField.value = domain;
+            
+            // Scroll to the contact form
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.scrollIntoView({ behavior: 'smooth' });
+                
+                // Add a visual highlight to the form to draw attention
+                const formContainer = document.querySelector('.contact-form-container');
+                if (formContainer) {
+                    formContainer.classList.add('highlight-form');
+                    setTimeout(() => {
+                        formContainer.classList.remove('highlight-form');
+                    }, 1500);
+                }
+            }
         }
 
         // Close modal when clicking outside of it
