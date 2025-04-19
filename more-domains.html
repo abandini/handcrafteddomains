@@ -1085,20 +1085,13 @@
 
         // Function to handle making an offer
         function makeOffer(domain) {
-            // Set the domain in the contact form
-            const domainInterestField = document.getElementById('domain_interest');
-            const domainField = document.getElementById('domain');
-            
-            if (domainInterestField) domainInterestField.value = domain;
-            if (domainField) domainField.value = domain;
-            
             // Close modal if open
             closeDomainModal();
             
-            // Redirect to contact form
-            window.location.href = "index.html#contactForm";
+            // Redirect to contact form on index.html with domain parameter
+            window.location.href = `index.html?domain=${encodeURIComponent(domain)}#contactForm`;
             
-            // Highlight the form (this will be handled by main.js when the page loads)
+            // The domain will be processed by the main.js script when the index page loads
         }
 
         // Close modal when clicking outside of it

@@ -1035,6 +1035,28 @@ window.makeOffer = function(domainName) {
 
 // Initialize all functionality when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Check for domain parameter in URL and populate form fields
+    const urlParams = new URLSearchParams(window.location.search);
+    const domainParam = urlParams.get('domain');
+    
+    if (domainParam) {
+        // Set the hidden field value
+        const domainInterestField = document.getElementById('domain_interest');
+        const domainField = document.getElementById('domain');
+        
+        if (domainInterestField) domainInterestField.value = domainParam;
+        if (domainField) domainField.value = domainParam;
+        
+        // Highlight the form to draw attention
+        const contactForm = document.querySelector('.contact-form-container');
+        if (contactForm) {
+            contactForm.classList.add('highlight-form');
+            setTimeout(() => {
+                contactForm.classList.remove('highlight-form');
+            }, 1500);
+        }
+    }
+    
     // Handle form submission and redirect
     const contactForm = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitFormBtn');
