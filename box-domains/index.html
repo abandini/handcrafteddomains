@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W09Z4K14ZZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W09Z4K14ZZ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium .box Domains — Limited-Time $30K Offer</title>
+    <meta name="description" content="Own a blockchain-native, DNS-routable .box domain today. Hand-picked, one-word brands for $30,000 — limited time only.">
+    <meta name="keywords" content="premium domains, .box domains, blockchain domains, web3 domains, ENS domains">
+    <meta name="author" content="Handcrafted Domains">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Premium .box Domains — Limited-Time $30K Offer">
+    <meta property="og:description" content="Own a blockchain-native, DNS-routable .box domain today. Hand-picked, one-word brands for $30,000 — limited time only.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://handcrafteddomains.com/box-domains/">
+    <meta property="og:image" content="https://handcrafteddomains.com/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://handcrafteddomains.com/box-domains/">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link rel="preload" href="../js/main.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Box Domains Page Specific Styles */
+        .box-hero {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .box-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .box-hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+        
+        .box-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .box-section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        
+        .box-section p {
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            color: #4b5563;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .domain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .domain-item {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .domain-item:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .domain-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .domain-status {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            color: #4b5563;
+        }
+        
+        .status-icon {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .price-tag {
+            background: #ffe7a3;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        /* Modal Styles */
+        #inquire-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 90%;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #6b7280;
+        }
+        
+        .modal-close:hover {
+            color: #1f2937;
+        }
+        
+        @media (max-width: 768px) {
+            .domain-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .box-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="box-hero">
+        <div class="container">
+            <h1>Claim Your .box Domain</h1>
+            <p>Own a blockchain-native, DNS-routable domain that works across Web2 and Web3.</p>
+            <div class="button-group">
+                <a href="#domains" class="button button-primary">View Domains</a>
+                <a href="#inquire" class="button button-secondary">Inquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Box Domains Section -->
+    <section id="domains" class="box-section">
+        <div class="container">
+            <h2>Premium .box Domains</h2>
+            <p>The .box domain extension offers the best of both worlds: traditional DNS routing for websites plus native blockchain integration with ENS support. As an early adopter, you'll secure a rare, one-word domain with fixed renewal fees and true digital ownership.</p>
+            <p><strong>Every domain below is $30,000 for a short launch window.</strong></p>
+            
+            <div class="domain-grid">
+                <!-- Domain Items -->
+                <div class="domain-item" onclick="openInquireModal('5g.box')">
+                    <div class="domain-name">5g.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+                
+                <div class="domain-item" onclick="openInquireModal('mobile.box')">
+                    <div class="domain-name">mobile.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+                
+                <div class="domain-item" onclick="openInquireModal('baseball.box')">
+                    <div class="domain-name">baseball.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+                
+                <div class="domain-item" onclick="openInquireModal('forsale.box')">
+                    <div class="domain-name">forsale.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+                
+                <div class="domain-item" onclick="openInquireModal('record.box')">
+                    <div class="domain-name">record.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+                
+                <div class="domain-item" onclick="openInquireModal('nftdrop.box')">
+                    <div class="domain-name">nftdrop.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+                
+                <div class="domain-item" onclick="openInquireModal('bogo.box')">
+                    <div class="domain-name">bogo.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+                
+                <div class="domain-item" onclick="openInquireModal('241.box')">
+                    <div class="domain-name">241.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+                
+                <div class="domain-item" onclick="openInquireModal('bat.box')">
+                    <div class="domain-name">bat.box</div>
+                    <div class="domain-status"><span class="status-icon">▢</span> Available</div>
+                    <div class="price-tag">$30,000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section id="inquire" class="cta-section">
+        <div class="container">
+            <h2>Inquire Now</h2>
+            <p>Interested in securing your premium .box domain? Fill out the form below and our domain specialists will contact you promptly.</p>
+            <div class="contact-form-container">
+                <form id="contactForm" action="https://getform.io/f/bolmoqya" method="POST" class="contact-form">
+                    <input type="hidden" name="source" value="Box Domains Page">
+                    <input type="hidden" id="domain_interest" name="domain_interest" value="">
+                    <input type="hidden" name="_redirect" value="https://handcrafteddomains.com/thank-you.html">
+                    <input type="hidden" name="_next" value="https://handcrafteddomains.com/thank-you.html">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="domain">Domain of Interest</label>
+                        <input type="text" id="domain" name="domain">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="button" id="submitFormBtn" class="button button-primary">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquire Modal -->
+    <div id="inquire-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeInquireModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 id="modal-domain-name"></h3>
+            <p>Interested in this premium .box domain? Fill out the form below to inquire.</p>
+            <form id="modalForm" action="https://getform.io/f/bolmoqya" method="POST" class="contact-form">
+                <input type="hidden" name="source" value="Box Domains Page">
+                <input type="hidden" id="modal_domain_interest" name="domain_interest" value="">
+                <input type="hidden" name="_redirect" value="https://handcrafteddomains.com/thank-you.html">
+                <input type="hidden" name="_next" value="https://handcrafteddomains.com/thank-you.html">
+                <div class="form-group">
+                    <label for="modal_name">Name</label>
+                    <input type="text" id="modal_name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal_email">Email</label>
+                    <input type="email" id="modal_email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal_message">Message</label>
+                    <textarea id="modal_message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="button" id="modalSubmitBtn" class="button button-primary">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" align="center">
+            <p>&copy; 2025 Handcrafted Domains. All rights reserved.</p>
+            <p>Secure transactions powered by Escrow.com</p>
+            <p class="footer-links">
+                <a href="../about-us.html">About Us</a>
+                <span class="footer-divider">|</span>
+                <a href="../more-domains.html">More Domains</a>
+                <span class="footer-divider">|</span>
+                <a href="../box-domains/">Box Domains</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy-policy.html">Privacy Policy</a>
+                <span class="footer-divider">|</span>
+                <a href="../index.html#domains">Domain Portfolio</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Structured Data Markup for SEO -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "5g.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "mobile.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "baseball.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "forsale.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "record.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "nftdrop.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "bogo.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "241.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "bat.box",
+            "description": "Premium .box domain - blockchain-native and DNS-routable",
+            "url": "https://handcrafteddomains.com/box-domains/",
+            "offers": {
+                "@type": "Offer",
+                "price": 30000,
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
+        }
+    ]
+    </script>
+
+    <script src="../js/main.js" defer></script>
+    <script>
+        // Modal functionality
+        function openInquireModal(domainName) {
+            const modal = document.getElementById('inquire-modal');
+            const modalDomainName = document.getElementById('modal-domain-name');
+            const modalDomainInterest = document.getElementById('modal_domain_interest');
+            
+            modalDomainName.textContent = domainName;
+            modalDomainInterest.value = domainName;
+            document.getElementById('modal_message').value = `I'm interested in purchasing the ${domainName} domain.`;
+            
+            modal.style.display = 'flex';
+        }
+        
+        function closeInquireModal() {
+            const modal = document.getElementById('inquire-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Close modal on outside click
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('inquire-modal');
+            if (event.target === modal) {
+                closeInquireModal();
+            }
+        });
+        
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitBtn = document.getElementById('submitFormBtn');
+            const modalSubmitBtn = document.getElementById('modalSubmitBtn');
+            const contactForm = document.getElementById('contactForm');
+            const modalForm = document.getElementById('modalForm');
+            
+            // Main form submission
+            submitBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (!contactForm.checkValidity()) {
+                    contactForm.reportValidity();
+                    return;
+                }
+                
+                // Fire GA event
+                if (typeof gtag === 'function') {
+                    gtag('event', 'domain_inquiry', {
+                        'event_category': 'Engagement',
+                        'event_label': document.getElementById('domain').value
+                    });
+                }
+                
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+                
+                fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    window.location.href = '/thank-you.html';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    window.location.href = '/thank-you.html';
+                });
+            });
+            
+            // Modal form submission
+            modalSubmitBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (!modalForm.checkValidity()) {
+                    modalForm.reportValidity();
+                    return;
+                }
+                
+                // Fire GA event
+                if (typeof gtag === 'function') {
+                    gtag('event', 'domain_inquiry', {
+                        'event_category': 'Engagement',
+                        'event_label': document.getElementById('modal_domain_interest').value
+                    });
+                }
+                
+                modalSubmitBtn.disabled = true;
+                modalSubmitBtn.textContent = 'Sending...';
+                
+                fetch(modalForm.action, {
+                    method: 'POST',
+                    body: new FormData(modalForm),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    window.location.href = '/thank-you.html';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    window.location.href = '/thank-you.html';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
