@@ -1202,7 +1202,15 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Filter domains
             domainCards.forEach(card => {
-                if (selectedCategory === 'all' || card.dataset.category.split(' ').includes(selectedCategory)) {
+                // Debug logging
+                console.log('Card:', card.querySelector('.domain-name').textContent);
+                console.log('Card categories:', card.dataset.category);
+                console.log('Selected category:', selectedCategory);
+                
+                // For 'all' category or if the card's category contains the selected category
+                if (selectedCategory === 'all' || 
+                    card.dataset.category.split(' ').indexOf(selectedCategory) !== -1 || 
+                    card.dataset.category === selectedCategory) {
                     card.style.display = 'block';
                     setTimeout(() => {
                         card.style.opacity = '1';
