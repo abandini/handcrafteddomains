@@ -1028,6 +1028,29 @@ const domainDetails = {
         ],
         premium: true,
         price_tier: 3
+    },
+    
+    // Travel & Lifestyle
+    'costaricahappyhour.com': {
+        category: "lifestyle",
+        subcategory: "beach",
+        story: "costaricahappyhour.com captures the essence of tropical leisure and Costa Rican hospitality. This premium domain is perfect for tourism businesses, travel blogs, vacation rentals, or hospitality ventures looking to highlight the relaxed, welcoming atmosphere of Costa Rica's beach towns and tourist hotspots.",
+        targetList: [
+            "Costa Rican tourism companies",
+            "Beach bars and restaurants",
+            "Vacation rental properties",
+            "Travel influencers and content creators",
+            "Tour operators and experience providers"
+        ],
+        features: [
+            "Instantly conveys tropical vacation atmosphere",
+            "Geographically specific for Costa Rica tourism",
+            "Appeals to visitors seeking authentic experiences",
+            "Perfect for hospitality and leisure industry",
+            "Captures the 'pura vida' lifestyle Costa Rica is known for"
+        ],
+        premium: true,
+        price_tier: 3
     }
 };
 
