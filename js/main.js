@@ -1051,6 +1051,29 @@ const domainDetails = {
         ],
         premium: true,
         price_tier: 3
+    },
+    
+    // Entertainment & Media
+    'betrascal.com': {
+        category: "entertainment",
+        subcategory: "comedy",
+        story: "betrascal.com offers a playful, mischievous brand identity perfect for comedy and entertainment ventures. This clever domain name combines the concept of betting or gambling with the playful character of a rascal, creating an engaging and memorable platform for content that amuses, entertains, and perhaps occasionally breaks the rules.",
+        targetList: [
+            "Comedy websites and content creators",
+            "Entertainment brands with a playful edge",
+            "Podcast networks and humor publications",
+            "Gaming platforms with a mischievous theme",
+            "Satirical news and media outlets"
+        ],
+        features: [
+            "Memorable and distinctive brand name",
+            "Evokes a sense of fun and playful mischief",
+            "Versatile application across entertainment niches",
+            "Appeals to audiences seeking clever, humorous content",
+            "Short, catchy, and easy to remember"
+        ],
+        premium: true,
+        price_tier: 3
     }
 };
 
