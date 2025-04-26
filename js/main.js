@@ -93,6 +93,17 @@ const categories = {
             "artifacts": "Historical Artifacts",
             "cultural": "Cultural Heritage"
         }
+    },
+    "sports": {
+        name: "Sports & Athletics",
+        icon: "futbol",
+        description: "Premium domains for sports teams, events, and athletic brands",
+        subcategories: {
+            "soccer": "Soccer/Football",
+            "events": "Sporting Events",
+            "teams": "Sports Teams",
+            "fitness": "Fitness & Training"
+        }
     }
 };
 
@@ -1000,8 +1011,8 @@ const domainDetails = {
     
     // Sports & Entertainment
     'worldcupfutbol.com': {
-        category: "entertainment",
-        subcategory: "media",
+        category: "sports",
+        subcategory: "soccer",
         story: "worldcupfutbol.com represents the pinnacle of global football branding. This premium domain combines the world's most watched sporting event with the international term for soccer, creating an instantly recognizable platform for football content, merchandise, or fan communities centered around the beautiful game.",
         targetList: [
             "Sports media and news sites",
