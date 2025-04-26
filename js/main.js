@@ -996,6 +996,27 @@ const domainDetails = {
         ],
         premium: true,
         price_tier: 3
+    },
+    
+    // Sports & Entertainment
+    'worldcupfutbol.com': {
+        category: "entertainment",
+        subcategory: "media",
+        story: "worldcupfutbol.com represents the pinnacle of global football branding. This premium domain combines the world's most watched sporting event with the international term for soccer, creating an instantly recognizable platform for football content, merchandise, or fan communities centered around the beautiful game.",
+        targetList: [
+            "Sports media and news sites",
+            "Soccer merchandise retailers",
+            "Football clubs and organizations",
+            "World Cup content creators and fan communities"
+        ],
+        features: [
+            "Global appeal with worldwide soccer fanbase",
+            "Instantly communicates football/soccer focus",
+            "Valuable combination of World Cup and futbol terms",
+            "Perfect for monetizing during World Cup cycles"
+        ],
+        premium: true,
+        price_tier: 3
     }
 };
 
