@@ -954,6 +954,48 @@ const domainDetails = {
         ],
         premium: true,
         price_tier: 2
+    },
+    
+    // Memory Science & Cognitive Technology
+    'mnemogenics.com': {
+        category: "health",
+        subcategory: "biotech",
+        story: "At the intersection of memory science and genetic technologies, mnemogenics.com represents cutting-edge research in neuroscience and cognitive enhancement. As research in neuroplasticity, memory enhancement, and cognitive modification accelerates, this domain is perfectly aligned with emerging technologies focused on understanding and enhancing human cognitive abilities.",
+        targetList: [
+            "Neuroscience research institutions",
+            "Cognitive health clinics",
+            "Memory enhancement programs",
+            "Neuropharmaceutical companies"
+        ],
+        features: [
+            "Distinctive and scientifically meaningful name",
+            "Rapidly growing cognitive assessment market",
+            "Strong SEO potential with built-in industry terms",
+            "Perfect for brain health technology ventures"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
+    // IoT & Mesh Networking
+    'meshmerized.com': {
+        category: "future-tech",
+        subcategory: "industrial",
+        story: "Meshmerized.com combines the technical term 'mesh' (network topology) with 'mesmerized' (to captivate), creating a powerful brand for companies revolutionizing mesh networking, IoT connectivity, and smart technology. Ideal for businesses in the rapidly expanding mesh networking and IoT technology sectors that aim to captivate their audience with innovative connectivity solutions.",
+        targetList: [
+            "Mesh networking providers",
+            "IoT platform developers",
+            "Smart city technology companies",
+            "Network infrastructure innovators"
+        ],
+        features: [
+            "Memorable and distinctive branding",
+            "Growing IoT market with billions of connected devices",
+            "Perfect positioning for connectivity technologies",
+            "Clear communication of technical expertise"
+        ],
+        premium: true,
+        price_tier: 3
     }
 };
 
