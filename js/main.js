@@ -1202,7 +1202,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Filter domains
             domainCards.forEach(card => {
-                if (selectedCategory === 'all' || card.dataset.category === selectedCategory) {
+                if (selectedCategory === 'all' || card.dataset.category.split(' ').includes(selectedCategory)) {
                     card.style.display = 'block';
                     setTimeout(() => {
                         card.style.opacity = '1';
