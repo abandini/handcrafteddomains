@@ -1053,6 +1053,29 @@ const domainDetails = {
         price_tier: 3
     },
     
+    // Luxury Costa Rica Travel
+    'elegantcostarica.com': {
+        category: "lifestyle",
+        subcategory: "beach",
+        story: "elegantcostarica.com embodies the luxury travel experience in one of the world's most beautiful destinations. This premium domain is ideal for high-end tourism services, luxury accommodations, and exclusive travel experiences that showcase the natural beauty and refined hospitality of Costa Rica.",
+        targetList: [
+            "Luxury travel agencies",
+            "Upscale resorts and boutique hotels",
+            "Exclusive tour operators",
+            "Private villa rentals",
+            "High-end adventure and eco-tourism providers"
+        ],
+        features: [
+            "Perfect combination of 'elegant' and 'Costa Rica' for upscale positioning",
+            "Appeals to affluent travelers seeking premium experiences",
+            "Ideal for showcasing luxury accommodations and exclusive tours",
+            "Captures the growing luxury eco-tourism market",
+            "Distinctive branding for high-end travel services"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
     // Entertainment & Media
     'betrascal.com': {
         category: "entertainment",
