@@ -1076,6 +1076,29 @@ const domainDetails = {
         price_tier: 3
     },
     
+    // Costa Rica Surf Community
+    'costaricasurfergirls.com': {
+        category: "lifestyle",
+        subcategory: "beach",
+        story: "costaricasurfergirls.com celebrates and empowers the growing female surf culture in Costa Rica's world-renowned beaches. This premium domain is perfect for surf schools focused on women, female surf retreats, community-building initiatives, and businesses that support the rapidly expanding women's surfing movement in one of the world's top surfing destinations.",
+        targetList: [
+            "Women's surf schools and instructors",
+            "Female-focused surf retreats and camps",
+            "Surf apparel and equipment brands for women",
+            "Adventure tourism operators",
+            "Women's empowerment and community organizations"
+        ],
+        features: [
+            "Directly targets the growing women's surf market",
+            "Combines Costa Rica's reputation as a surf paradise with female focus",
+            "Perfect for building community around women's surfing",
+            "Ideal for educational content and surf tourism services",
+            "Appeals to the adventure travel and women's empowerment movements"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
     // Entertainment & Media
     'betrascal.com': {
         category: "entertainment",
