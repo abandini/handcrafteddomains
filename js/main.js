@@ -114,6 +114,17 @@ const categories = {
             "gardening": "Gardening & Horticulture",
             "sustainable": "Sustainable & Eco-Farming"
         }
+    },
+    "pets": {
+        name: "Pets & Animals",
+        icon: "paw",
+        description: "Premium domains for pet services, animal care, and pet-related businesses",
+        subcategories: {
+            "dogs": "Dog Care & Services",
+            "cats": "Cat Care & Products",
+            "petservices": "Pet Services & Training",
+            "veterinary": "Veterinary & Animal Health"
+        }
     }
 };
 
@@ -1239,6 +1250,33 @@ const domainDetails = {
             "Ideal for content marketing about Costa Rica's agricultural advantages",
             "Positions your business as the authority in Costa Rica's farm real estate market",
             "Versatile for both agricultural investment properties and luxury farm estates"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
+    // Pet Care & Services
+    'wagginways.com': {
+        category: "pets",
+        subcategory: "dogs",
+        story: "wagginways.com is a playful, memorable domain that instantly creates a positive emotional connection for pet owners. The name cleverly combines the happy image of a wagging tail with the suggestion of paths, routes, or methods - perfect for dog walking services, pet care businesses, and canine training programs.\n\nThe pet industry continues to experience remarkable growth, with Americans spending over $100 billion annually on their pets. This premium domain positions your business to capture a share of this thriving market with a name that's both descriptive and emotionally resonant. The friendly, approachable nature of the domain instantly communicates a passion for pets and their well-being.\n\nBeyond traditional dog walking, this versatile domain is ideal for a range of pet services including pet sitting, dog training academies, pet-friendly travel services, or even a multi-service pet care platform. The name suggests movement, happiness, and the special bond between pets and their owners - all key elements for successful branding in the pet care industry.",
+        targetList: [
+            "Dog walking and pet sitting services",
+            "Pet care franchises and chains",
+            "Canine training programs and academies",
+            "Pet-friendly travel and accommodation services",
+            "Mobile pet grooming businesses",
+            "Pet transportation services",
+            "Dog daycare and boarding facilities"
+        ],
+        features: [
+            "Instantly memorable and emotionally appealing to pet owners",
+            "Clear connection to pet services with the playful 'wagging' reference",
+            "Versatile for various pet care business models",
+            "Perfect for building a friendly, approachable brand identity",
+            "Excellent for local SEO targeting pet service keywords",
+            "Appeals to the growing market of dedicated pet parents",
+            "Short, catchy, and easy to remember for word-of-mouth marketing"
         ],
         premium: true,
         price_tier: 3
