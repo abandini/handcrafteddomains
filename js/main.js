@@ -125,6 +125,17 @@ const categories = {
             "petservices": "Pet Services & Training",
             "veterinary": "Veterinary & Animal Health"
         }
+    },
+    "romance": {
+        name: "Romance & Relationships",
+        icon: "heart",
+        description: "Premium domains for dating services, relationship coaching, and intimate products",
+        subcategories: {
+            "dating": "Dating & Matchmaking",
+            "coaching": "Relationship Coaching",
+            "intimacy": "Intimacy & Couples",
+            "products": "Intimate Products"
+        }
     }
 };
 
@@ -1277,6 +1288,33 @@ const domainDetails = {
             "Excellent for local SEO targeting pet service keywords",
             "Appeals to the growing market of dedicated pet parents",
             "Short, catchy, and easy to remember for word-of-mouth marketing"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
+    // Relationship Advice & Intimacy
+    'lovewispers.com': {
+        category: "romance",
+        subcategory: "intimacy",
+        story: "lovewispers.com is an evocative and intimate domain that creates an immediate emotional connection with audiences seeking relationship guidance, romantic advice, or deeper intimacy. The name beautifully combines 'love' with 'whispers,' suggesting gentle guidance, intimate communication, and the sharing of secrets that strengthen relationships.\n\nIn today's fast-paced digital world, meaningful connections and intimate relationships require nurturing and guidance. This premium domain is perfect for relationship coaches, couples therapists, intimacy educators, or content creators focusing on romantic relationships. The name conveys trust, discretion, and a gentle approach to sensitive topics.\n\nBeyond traditional relationship coaching, this versatile domain could serve as a platform for podcasts about love and relationships, subscription services offering romantic advice, or educational content about emotional and physical intimacy. The soft, approachable nature of 'whispers' creates a safe space for exploring vulnerable topics, while the direct reference to 'love' clearly communicates the domain's focus.",
+        targetList: [
+            "Relationship coaches and therapists",
+            "Couples counselors and marriage therapists",
+            "Intimacy educators and workshops",
+            "Dating advice platforms and services",
+            "Romantic content creators and podcasters",
+            "Subscription services for relationship guidance",
+            "Authors and publishers of relationship books"
+        ],
+        features: [
+            "Emotionally resonant name that instantly communicates relationship focus",
+            "Suggests intimacy, trust, and gentle guidance",
+            "Perfect for building a brand around relationship expertise",
+            "Versatile for various relationship-focused business models",
+            "Appeals to audiences seeking authentic connection and intimacy",
+            "Excellent for content marketing around relationship topics",
+            "Memorable and evocative for strong brand recognition"
         ],
         premium: true,
         price_tier: 3
