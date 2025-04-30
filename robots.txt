@@ -13,4 +13,4 @@ Disallow: /js/  # No need to index JavaScript files
 Disallow: /images/  # No need to index image files directly
 
 # Specify the location of the sitemap
-Sitemap: /sitemap.xml
+Sitemap: https://handcrafteddomains.io/sitemap.xml
