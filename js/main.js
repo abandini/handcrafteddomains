@@ -919,6 +919,33 @@ const domainDetails = {
         premium: true,
         price_tier: 2
     },
+    
+    // Sports Entertainment & Media
+    'TRIPLECROWNGIRLS.COM': {
+        category: "entertainment",
+        subcategory: "sports",
+        story: "TRIPLECROWNGIRLS.COM is a premium domain that combines the prestige of the Triple Crown sporting events with a focus on female athletes and women's sports content. This powerful domain name creates an immediate association with achievement, excellence, and the breaking of barriers in traditionally male-dominated sporting arenas.\n\nThe Triple Crown concept resonates across multiple sports - from horse racing's prestigious three races (Kentucky Derby, Preakness Stakes, and Belmont Stakes) to baseball's batting achievement or surfing's elite competitions. This versatility makes the domain perfect for various sports media ventures, female athlete spotlights, or entertainment platforms celebrating women's achievements in competitive sports.\n\nAs women's sports continue to gain mainstream attention and investment, this domain positions your brand at the forefront of this growing market. It's ideal for building communities around prestigious sporting events, creating content featuring female athletes, or developing platforms that elevate women's participation and recognition in competitive sports.",
+        targetList: [
+            "Sports media companies focusing on women's athletics",
+            "Horse racing platforms highlighting female jockeys and trainers",
+            "Women's sports leagues and organizations",
+            "Female athlete representation agencies",
+            "Sports documentary producers and content creators",
+            "Event management companies for women's sporting events",
+            "Sports betting platforms with women's sports markets"
+        ],
+        features: [
+            "Combines prestigious 'Triple Crown' concept with focus on women athletes",
+            "Perfect for the rapidly growing women's sports media market",
+            "Versatile across multiple sports categories",
+            "Ideal for community building around women's sporting achievements",
+            "Strong branding potential for sports entertainment ventures",
+            "Appeals to the increasing audience for women's competitive sports",
+            "Excellent SEO value for women's sports and Triple Crown event keywords"
+        ],
+        premium: true,
+        price_tier: 3
+    },
     'drinkingware.com': {
         category: "lifestyle",
         subcategory: "home",
