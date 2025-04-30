@@ -1109,6 +1109,33 @@ const domainDetails = {
         price_tier: 3
     },
     
+    // Mountain Lifestyle
+    '8700feet.com': {
+        category: "lifestyle",
+        subcategory: "mountain",
+        story: "8700feet.com represents the elevation of mountain lifestyle branding. This distinctive, altitude-inspired domain creates an immediate connection to high-altitude living, recreation, and adventure. At 8,700 feet (approximately 2,650 meters), this elevation represents the sweet spot of many premier mountain destinations worldwide - high enough for spectacular alpine views and winter sports, yet still comfortably habitable year-round.\n\nThis premium domain is perfect for mountain resorts, ski destinations, high-altitude real estate developments, outdoor recreation businesses, and lifestyle brands that want to associate with the prestige and adventure of mountain living. The specific numerical reference creates intrigue and memorability while instantly communicating the alpine positioning of your brand.",
+        targetList: [
+            "Mountain and ski resorts",
+            "High-altitude real estate developments",
+            "Alpine tourism and adventure companies",
+            "Outdoor gear and apparel brands",
+            "Mountain lifestyle publications and content creators",
+            "Winter sports facilities and training centers",
+            "High-elevation wellness retreats and spas"
+        ],
+        features: [
+            "Distinctive numerical branding that instantly communicates mountain elevation",
+            "Perfect for businesses in premier mountain destinations worldwide",
+            "Appeals to affluent mountain enthusiasts and adventure seekers",
+            "Ideal for content about mountain living, recreation, and real estate",
+            "Versatile for both winter sports and year-round mountain activities",
+            "Creates immediate association with high-altitude prestige and lifestyle",
+            "Memorable and intriguing name that stands out in the outdoor recreation market"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
     // Costa Rica Agricultural Investment
     'farmlandincostarica.com': {
         category: "farming",
