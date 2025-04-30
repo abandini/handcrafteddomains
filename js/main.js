@@ -1136,6 +1136,33 @@ const domainDetails = {
         price_tier: 3
     },
     
+    // Alternative Fashion & Body Jewelry
+    'tonguewear.com': {
+        category: "lifestyle",
+        subcategory: "fashion",
+        story: "tonguewear.com is a bold, distinctive domain that instantly communicates its niche in the body jewelry and oral fashion accessory market. This premium domain name is perfect for businesses specializing in tongue piercings, oral jewelry, and innovative accessories that make a statement.\n\nThe body modification and piercing industry continues to grow as self-expression becomes increasingly mainstream. This domain positions your brand at the forefront of this trend, with a clear focus on a specific and profitable niche within the larger body jewelry market. The name is memorable, descriptive, and instantly communicates the product category to potential customers.\n\nBeyond traditional piercing jewelry, tonguewear.com could also represent innovative oral accessories, dental fashion items, or unique lifestyle products that challenge conventional fashion boundaries. The domain's distinctive nature makes it perfect for brands looking to stand out in the alternative fashion and self-expression markets.",
+        targetList: [
+            "Body jewelry manufacturers and retailers",
+            "Piercing studios and body modification professionals",
+            "Alternative fashion brands and marketplaces",
+            "Lifestyle brands focused on self-expression",
+            "Dental fashion and oral accessory innovators",
+            "E-commerce stores specializing in unique personal accessories",
+            "Influencers and content creators in the body modification community"
+        ],
+        features: [
+            "Instantly communicates product category and market niche",
+            "Memorable and distinctive in the fashion and accessories space",
+            "Perfect for e-commerce with clear product positioning",
+            "Appeals to the growing market for self-expression and body modification",
+            "Versatile for various oral fashion accessories beyond traditional piercings",
+            "Strong potential for building a community around alternative fashion",
+            "Excellent SEO value for specific tongue jewelry and oral accessory keywords"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
     // Costa Rica Agricultural Investment
     'farmlandincostarica.com': {
         category: "farming",
