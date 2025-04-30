@@ -1136,6 +1136,33 @@ const domainDetails = {
         price_tier: 3
     },
     
+    // Costa Rica Luxury Real Estate
+    'topcostaricarealestate.com': {
+        category: "farming",
+        subcategory: "agriculture",
+        story: "topcostaricarealestate.com is the premier domain for showcasing Costa Rica's most exclusive agricultural and rural properties. This premium domain positions your business at the intersection of luxury real estate and agricultural investment in one of Central America's most stable and environmentally conscious countries.\n\nCosta Rica's real estate market has seen consistent growth, particularly in agricultural properties and farm estates that offer both lifestyle benefits and investment potential. From coffee plantations in the Central Valley to sustainable farms on the Pacific coast, the country offers diverse agricultural opportunities in breathtaking settings. This domain is perfect for real estate agencies specializing in high-end rural properties, farm estates, and agricultural investments that combine luxury living with sustainable land stewardship.\n\nWith Costa Rica's strong property rights, growing expat community, and reputation as an eco-tourism destination, agricultural real estate has become increasingly attractive to international investors looking for both financial returns and a connection to the land in this tropical paradise.",
+        targetList: [
+            "Luxury real estate agencies specializing in rural properties",
+            "Farm and agricultural property specialists",
+            "Investment advisors for international agricultural portfolios",
+            "High-net-worth individuals seeking farm estates",
+            "Developers of eco-luxury agricultural communities",
+            "Boutique agencies focusing on specialty agricultural properties",
+            "Retirement and relocation services for farm living"
+        ],
+        features: [
+            "Direct and authoritative domain name that instantly communicates premium positioning",
+            "Perfect for showcasing high-end agricultural properties and farm estates",
+            "Excellent SEO potential for competitive real estate keywords",
+            "Appeals to affluent international buyers seeking agricultural investments",
+            "Ideal for content marketing about Costa Rica's agricultural advantages",
+            "Positions your business as the authority in Costa Rica's farm real estate market",
+            "Versatile for both agricultural investment properties and luxury farm estates"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
     // Entertainment & Media
     'betrascal.com': {
         category: "entertainment",
