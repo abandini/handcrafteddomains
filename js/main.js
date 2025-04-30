@@ -1113,20 +1113,24 @@ const domainDetails = {
     'farmlandincostarica.com': {
         category: "farming",
         subcategory: "agriculture",
-        story: "farmlandincostarica.com represents the growing opportunity for agricultural investment and sustainable farming in Costa Rica's fertile regions. This premium domain is ideal for real estate agencies specializing in farmland, agricultural investment firms, sustainable farming operations, and eco-development projects that combine agriculture with conservation in one of Central America's most environmentally conscious countries.",
+        story: "farmlandincostarica.com represents the exceptional opportunity for agricultural investment and sustainable farming in Costa Rica's lush, fertile regions. With year-round growing seasons, abundant rainfall, and rich volcanic soil, Costa Rica offers some of the most productive agricultural land in the Americas. This premium domain is perfect for showcasing farmland properties, agricultural investment opportunities, sustainable farming operations, and eco-development projects that harmonize agriculture with Costa Rica's world-renowned commitment to environmental conservation and biodiversity.\n\nCosta Rica has become a global leader in sustainable agriculture, with over 98% renewable energy and a national commitment to carbon neutrality. The country's stable democracy, strong property rights, and growing expat community make it an increasingly attractive destination for foreign agricultural investors seeking both financial returns and lifestyle benefits in a tropical paradise.",
         targetList: [
-            "Agricultural real estate agencies",
-            "Sustainable farming operations",
-            "Foreign investors in Costa Rican agriculture",
+            "Agricultural real estate agencies and land brokers",
+            "Sustainable and organic farming operations",
+            "Foreign investors in Costa Rican agriculture and farmland",
             "Eco-development and permaculture projects",
-            "Agricultural tourism ventures"
+            "Agricultural tourism and farm-stay ventures",
+            "Coffee, cacao, and tropical fruit exporters",
+            "Regenerative agriculture consultants and educators"
         ],
         features: [
-            "Clear geographical and purpose-specific branding",
-            "Appeals to the growing sustainable agriculture investment market",
-            "Perfect for showcasing farmland listings and agricultural opportunities",
-            "Ideal for content about Costa Rica's agricultural advantages",
-            "Combines real estate, agriculture, and Costa Rica's eco-friendly reputation"
+            "Clear geographical and purpose-specific branding that instantly communicates value",
+            "Appeals to the rapidly growing sustainable agriculture and farmland investment markets",
+            "Perfect for showcasing farmland listings, property details, and agricultural opportunities",
+            "Ideal for educational content about Costa Rica's unique agricultural advantages",
+            "Combines real estate, agriculture, and Costa Rica's eco-friendly reputation",
+            "Targets the growing demographic of agricultural investors seeking international diversification",
+            "Excellent SEO potential for farmland investment and Costa Rica agriculture keywords"
         ],
         premium: true,
         price_tier: 3
