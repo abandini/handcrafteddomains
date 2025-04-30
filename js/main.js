@@ -104,6 +104,16 @@ const categories = {
             "teams": "Sports Teams",
             "fitness": "Fitness & Training"
         }
+    },
+    "farming": {
+        name: "Gardening & Farming",
+        icon: "seedling",
+        description: "Premium domains for agriculture, gardening, and sustainable farming",
+        subcategories: {
+            "agriculture": "Agriculture & Farming",
+            "gardening": "Gardening & Horticulture",
+            "sustainable": "Sustainable & Eco-Farming"
+        }
     }
 };
 
@@ -1094,6 +1104,29 @@ const domainDetails = {
             "Perfect for building community around women's surfing",
             "Ideal for educational content and surf tourism services",
             "Appeals to the adventure travel and women's empowerment movements"
+        ],
+        premium: true,
+        price_tier: 3
+    },
+    
+    // Costa Rica Agricultural Investment
+    'farmlandincostarica.com': {
+        category: "farming",
+        subcategory: "agriculture",
+        story: "farmlandincostarica.com represents the growing opportunity for agricultural investment and sustainable farming in Costa Rica's fertile regions. This premium domain is ideal for real estate agencies specializing in farmland, agricultural investment firms, sustainable farming operations, and eco-development projects that combine agriculture with conservation in one of Central America's most environmentally conscious countries.",
+        targetList: [
+            "Agricultural real estate agencies",
+            "Sustainable farming operations",
+            "Foreign investors in Costa Rican agriculture",
+            "Eco-development and permaculture projects",
+            "Agricultural tourism ventures"
+        ],
+        features: [
+            "Clear geographical and purpose-specific branding",
+            "Appeals to the growing sustainable agriculture investment market",
+            "Perfect for showcasing farmland listings and agricultural opportunities",
+            "Ideal for content about Costa Rica's agricultural advantages",
+            "Combines real estate, agriculture, and Costa Rica's eco-friendly reputation"
         ],
         premium: true,
         price_tier: 3
