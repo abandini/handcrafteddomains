@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W09Z4K14ZZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W09Z4K14ZZ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Domain — HandCraftedDomains Marketplace</title>
+    <meta name="description" content="Sell your premium domain with HandCraftedDomains. Just 9% commission, AI-written brand stories, and secure escrow services.">
+    <meta name="keywords" content="sell domain, domain marketplace, domain broker, domain listing, escrow">
+    <meta name="author" content="Handcrafted Domains">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="List Your Domain — HandCraftedDomains Marketplace">
+    <meta property="og:description" content="Sell your premium domain with HandCraftedDomains. Just 9% commission, AI-written brand stories, and secure escrow services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://handcrafteddomains.com/list-your-domain.html">
+    <meta property="og:image" content="https://handcrafteddomains.com/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://handcrafteddomains.com/list-your-domain.html">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* List Your Domain Page Specific Styles */
+        .list-hero {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .list-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .list-hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+        
+        .list-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .list-section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
+        
+        .list-section h3 {
+            color: #2563eb;
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .list-section p {
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            color: #4b5563;
+        }
+        
+        .benefits-list {
+            margin: 2rem 0;
+            padding-left: 0;
+            list-style-type: none;
+        }
+        
+        .benefits-list li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+            line-height: 1.6;
+            color: #4b5563;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+        
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem 0;
+            position: relative;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .timeline:before {
+            content: "";
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #e5e7eb;
+            z-index: 1;
+        }
+        
+        .timeline-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            width: 22%;
+        }
+        
+        .timeline-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-title {
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        .timeline-text {
+            font-size: 0.9rem;
+            color: #6b7280;
+            text-align: center;
+        }
+        
+        .faq-container {
+            margin: 3rem 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1.2rem;
+            background-color: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+        
+        .faq-question:after {
+            content: "+";
+            font-size: 1.5rem;
+            color: #2563eb;
+        }
+        
+        .faq-question.active:after {
+            content: "−";
+        }
+        
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            padding: 1.2rem;
+            max-height: 500px;
+        }
+        
+        .faq-answer p {
+            margin: 0;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+        
+        .cta-button:hover {
+            background-color: #1e40af;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: #f8fafc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #1f2937;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+        }
+        
+        .form-submit {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background-color: #1e40af;
+        }
+        
+        @media (max-width: 768px) {
+            .list-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .list-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .list-section h2 {
+                font-size: 1.8rem;
+            }
+            
+            .list-section h3 {
+                font-size: 1.5rem;
+            }
+            
+            .timeline {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .timeline:before {
+                display: none;
+            }
+            
+            .timeline-step {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="list-hero">
+        <div class="container">
+            <h1>Turn Your Domain Into Cash for Just 9%</h1>
+            <p>List your premium domain with HandCraftedDomains and leverage our curated, story-driven approach to connect with motivated buyers.</p>
+            <a href="#benefits" class="button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Navigation Bar -->
+    <div class="main-nav">
+        <div class="container">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="more-domains.html">Marketplace</a>
+                <a href="list-your-domain.html" class="active">List Your Domain</a>
+                <a href="box-domains/">Box Domains</a>
+                <a href="index.html#domains">Domain Portfolio</a>
+                <a href="index.html#contactForm">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section id="benefits" class="list-section">
+        <div class="container">
+            <h2>Our Curated, Story-Driven Approach</h2>
+            <p>At HandCraftedDomains, we believe that every premium domain has a story to tell. Our unique approach focuses on crafting compelling narratives that showcase the true potential of your domain to the right audience of motivated buyers.</p>
+            <p>Unlike traditional domain marketplaces that simply list domains in a crowded directory, we create dedicated landing pages that highlight the unique value proposition of each domain, complete with industry-specific use cases and potential applications.</p>
+            
+            <h3>Benefits of Listing With Us</h3>
+            <ul class="benefits-list">
+                <li><strong>Flat 9% Success Fee</strong> - No upfront costs. We only earn when you sell.</li>
+                <li><strong>AI-Written Brand Story Lander</strong> - Each domain gets a dedicated page with compelling use cases.</li>
+                <li><strong>Optional 'Bill-Boost' Premium</strong> - $49/yr for enhanced promotion and personalized sales outreach.</li>
+                <li><strong>Featured Newsletter Slots</strong> - Get featured in our newsletter sent to motivated domain buyers.</li>
+                <li><strong>Escrow via Escrow.com</strong> - Secure transactions with the industry's most trusted escrow service.</li>
+                <li><strong>TXT-Record Ownership Verification</strong> - Simple verification process to confirm domain ownership.</li>
+            </ul>
+            
+            <h3>How It Works</h3>
+            <div class="timeline">
+                <div class="timeline-step">
+                    <div class="timeline-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="timeline-title">Submit</div>
+                    <div class="timeline-text">Complete our simple domain submission form with your details.</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="timeline-title">Verify</div>
+                    <div class="timeline-text">Confirm ownership with a simple TXT record verification.</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-title">Go Live</div>
+                    <div class="timeline-text">Your domain gets a custom landing page and promotion.</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="timeline-title">Get Paid</div>
+                    <div class="timeline-text">Receive payment securely through Escrow.com.</div>
+                </div>
+            </div>
+            
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What fees do you charge?</div>
+                    <div class="faq-answer">
+                        <p>We operate on a simple, transparent fee structure: a flat 9% success fee on the final sale price. There are no upfront costs to list your domain. The optional 'Bill-Boost' premium service is available for $49/year, which includes enhanced promotion, personalized sales outreach, and priority placement in our marketplace.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is my listing exclusive to HandCraftedDomains?</div>
+                    <div class="faq-answer">
+                        <p>No, we don't require exclusivity. You're free to list your domain with other brokers or marketplaces simultaneously. However, if you choose our 'Bill-Boost' premium service, we do ask for a 30-day exclusive listing period to maximize our marketing efforts.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How long does it take to get paid after a sale?</div>
+                    <div class="faq-answer">
+                        <p>Once a sale is completed, funds are typically released from escrow within 3-5 business days after the domain transfer is confirmed. We use Escrow.com for all transactions, which ensures security for both buyers and sellers. The 9% success fee is automatically deducted from the final sale amount before the funds are released to you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do you verify domain ownership?</div>
+                    <div class="faq-answer">
+                        <p>We use a simple TXT record verification process. After submitting your domain, you'll receive instructions to add a specific TXT record to your domain's DNS settings. This confirms you have control over the domain without requiring any transfer of ownership until an actual sale occurs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What types of domains do you accept?</div>
+                    <div class="faq-answer">
+                        <p>We focus on quality over quantity. We accept domains that have clear commercial value, strong branding potential, and are generally under 15 characters. We specialize in .com domains, but also accept premium domains with other extensions if they have exceptional branding potential. Each submission is reviewed by our team to ensure it meets our marketplace standards.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 4rem 0;">
+                <h2>Ready to List Your Domain?</h2>
+                <p>Join our curated marketplace and connect with motivated buyers.</p>
+                <a href="/dashboard" class="cta-button">Start Listing</a>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Have Questions? Contact Us</h3>
+                <form action="https://getform.io/f/bolmoqya" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="domain">Domain Name (Optional)</label>
+                        <input type="text" id="domain" name="domain">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" align="center">
+            <p>© 2025 Handcrafted Domains. All rights reserved.</p>
+            <p>Secure transactions powered by Escrow.com</p>
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <span class="footer-divider">|</span>
+                <a href="more-domains.html">Marketplace</a>
+                <span class="footer-divider">|</span>
+                <a href="box-domains/">Box Domains</a>
+                <span class="footer-divider">|</span>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <span class="footer-divider">|</span>
+                <a href="index.html#domains">Domain Portfolio</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isActive = this.classList.contains('active');
+                    
+                    // Close all other FAQs
+                    document.querySelectorAll('.faq-question').forEach(q => {
+                        q.classList.remove('active');
+                        q.nextElementSibling.classList.remove('active');
+                    });
+                    
+                    // Toggle current FAQ
+                    if (!isActive) {
+                        this.classList.add('active');
+                        answer.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

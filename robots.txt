@@ -5,6 +5,7 @@ Allow: /index.html
 Allow: /more-domains.html
 Allow: /about-us.html
 Allow: /privacy-policy.html
+Allow: /list-your-domain.html
 Allow: /box-domains/  # Allow crawling of box domains page
 Disallow: /thank-you.html  # No need to index the thank you page
 Disallow: /admin/  # Prevent indexing of any future admin areas
