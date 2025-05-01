@@ -537,18 +537,40 @@ const domainDetails = {
     'dailysuccessplanner.com': {
         category: "business",
         subcategory: "productivity",
-        story: "Empowering achievement one day at a time. This domain is perfect for productivity tools, planning systems, and personal development platforms.",
+        story: "Empowering achievement one day at a time. Perfect for productivity tools, planning systems, and personal development platforms.",
         targetList: [
             "Productivity app developers",
             "Personal development coaches",
-            "Planner and journal manufacturers",
+            "Planning system creators",
             "Time management consultants"
         ],
         features: [
-            "Clear product description",
+            "Clear and descriptive domain name",
             "Growing productivity market",
-            "Appeals to achievement-oriented audience",
-            "Subscription model potential"
+            "Appeals to self-improvement audience",
+            "Perfect for subscription-based services"
+        ],
+        premium: true,
+        price_tier: 2
+    },
+    'banneraddepot.com': {
+        category: "business",
+        subcategory: "marketing",
+        story: "Banneraddepot.com is the perfect domain for businesses specializing in banner advertising, digital marketing, and promotional display solutions. This versatile domain name clearly communicates its purpose while providing a strong foundation for both online and physical banner advertising services. As businesses continue to seek effective advertising solutions across multiple channels, this domain positions your company as the go-to destination for all banner advertising needs.",
+        targetList: [
+            "Digital marketing agencies",
+            "Banner ad designers and producers",
+            "Outdoor advertising companies",
+            "Trade show display providers",
+            "Online advertising platforms",
+            "Print shops specializing in banners"
+        ],
+        features: [
+            "Clear and descriptive domain name that instantly communicates purpose",
+            "Versatile for both digital and physical banner advertising services",
+            "Strong SEO potential with industry-specific keywords",
+            "Perfect for building a comprehensive banner advertising business",
+            "Appeals to both B2B and B2C advertising markets"
         ],
         premium: true,
         price_tier: 2
