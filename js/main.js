@@ -202,6 +202,29 @@ const domainDetails = {
         premium: true,
         price_tier: 2
     },
+    
+    'ceilp.com': {
+        category: "health",
+        subcategory: "medical",
+        story: "Ceilp.com is a concise, memorable domain perfect for health technology platforms, wellness applications, and innovative medical services. The short, distinctive name has a modern feel that resonates with health-conscious consumers and healthcare professionals alike. This domain is ideal for companies focused on patient care improvement, health analytics platforms, or wellness tracking applications.",
+        targetList: [
+            "Healthcare technology startups",
+            "Patient care improvement platforms",
+            "Health analytics services",
+            "Wellness tracking applications",
+            "Telemedicine providers",
+            "Medical practice management solutions"
+        ],
+        features: [
+            "Short, memorable, and easy to pronounce",
+            "Modern feel perfect for health tech branding",
+            "Versatile application across healthcare sectors",
+            "Strong potential for brand development",
+            "Distinctive in the crowded healthcare market"
+        ],
+        premium: true,
+        price_tier: 2
+    },
 
     'curetoenailfungus.com': {
         category: "health",
