@@ -91,6 +91,14 @@ section > .container {
     justify-content: center;
 }
 
+/* Call to Action Button */
+#submitFormBtn, #modalSubmitBtn {
+    font-size: 1.2rem;
+    padding: 14px 34px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
 .button {
     display: inline-block;
     padding: 12px 32px;
