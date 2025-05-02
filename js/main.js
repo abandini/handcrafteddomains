@@ -172,7 +172,7 @@ const domainDetails = {
         ],
         premium: true,
         price_tier: 2,
-        visit_site: "https://www.rev-a-shelf.com/"
+        visit_site: "https://appliancegarages.com"
     },
     // AI & Technology
     '40hz.ai': {
