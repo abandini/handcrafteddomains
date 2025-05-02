@@ -2,6 +2,17 @@
 
 // Domain Categories Structure
 const categories = {
+    "home-kitchen": {
+        name: "Home & Kitchen",
+        icon: "home",
+        description: "Premium domains for home goods, kitchen appliances, and interior design",
+        subcategories: {
+            "appliances": "Appliances & Kitchen Gadgets",
+            "interiors": "Interior Design & Decor",
+            "furniture": "Furniture & Home Goods",
+            "smart-home": "Smart Home Technology"
+        }
+    },
     "ai-tech": {
         name: "AI & Technology",
         icon: "robot",
@@ -141,6 +152,28 @@ const categories = {
 
 // Domain Details Database
 const domainDetails = {
+    'appliancegarages.com': {
+        category: "home-kitchen",
+        subcategory: "appliances",
+        story: "ApplianceGarages.com is the perfect domain for businesses specializing in kitchen organization solutions, particularly appliance garages - those sleek cabinets designed to hide countertop appliances while keeping them accessible. This premium domain instantly communicates expertise in kitchen organization and modern design.",
+        targetList: [
+            "Kitchen cabinet manufacturers",
+            "Custom kitchen designers",
+            "Home organization retailers",
+            "Kitchen renovation companies",
+            "Interior designers specializing in kitchens"
+        ],
+        features: [
+            "Descriptive and specific to a growing kitchen design niche",
+            "Appeals to the modern trend of clean, clutter-free kitchens",
+            "Excellent SEO potential for kitchen organization searches",
+            "Perfect for e-commerce selling cabinet solutions",
+            "Ideal for content marketing about kitchen organization"
+        ],
+        premium: true,
+        price_tier: 2,
+        visit_site: "https://www.rev-a-shelf.com/"
+    },
     // AI & Technology
     '40hz.ai': {
         category: "ai-tech",
@@ -1425,6 +1458,13 @@ window.showDomainDetails = function(domainName) {
                             </li>
                         `).join('')}
                     </ul>
+                </div>
+            ` : ''}
+            ${details.visit_site ? `
+                <div class="mt-4 text-center">
+                    <a href="${details.visit_site}" target="_blank" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>Visit Example Site
+                    </a>
                 </div>
             ` : ''}
             ${details.price_tier ? `
