@@ -302,7 +302,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <button type="button" id="submitFormBtn" class="button button-primary">Submit Inquiry</button>
+                    <button type="button" id="submitFormBtn" class="button button-primary">Get Price & Next Steps</button>
                 </form>
             </div>
         </div>
@@ -333,7 +333,7 @@
                     <label for="modal_message">Message</label>
                     <textarea id="modal_message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="button" id="modalSubmitBtn" class="button button-primary">Submit Inquiry</button>
+                <button type="button" id="modalSubmitBtn" class="button button-primary">Get Price & Next Steps</button>
             </form>
         </div>
     </div>
@@ -533,7 +533,7 @@
                 }
                 
                 submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
+                submitBtn.textContent = 'Processing...';
                 
                 fetch(contactForm.action, {
                     method: 'POST',
@@ -569,7 +569,7 @@
                 }
                 
                 modalSubmitBtn.disabled = true;
-                modalSubmitBtn.textContent = 'Sending...';
+                modalSubmitBtn.textContent = 'Processing...';
                 
                 fetch(modalForm.action, {
                     method: 'POST',

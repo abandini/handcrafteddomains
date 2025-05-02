@@ -1559,7 +1559,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Disable the submit button and show loading state
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
+            submitBtn.textContent = 'Processing...';
             
             // Submit the form using fetch API
             fetch(contactForm.action, {
