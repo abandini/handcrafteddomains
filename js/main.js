@@ -152,6 +152,28 @@ const categories = {
 
 // Domain Details Database
 const domainDetails = {
+    'mantuaries.com': {
+        category: "home-kitchen",
+        subcategory: "furniture",
+        story: "Mantuaries.com is an exceptional domain for businesses specializing in mantuary design and creation - those dedicated masculine spaces in the home like man caves, home bars, entertainment rooms, and home offices. This premium domain instantly communicates expertise in creating stylish, functional spaces tailored to men's preferences and interests.",
+        targetList: [
+            "Interior designers specializing in masculine spaces",
+            "Custom furniture manufacturers for home bars and entertainment rooms",
+            "Home theater and entertainment system installers",
+            "Man cave accessory and décor retailers",
+            "Home office design specialists"
+        ],
+        features: [
+            "Catchy and memorable blend of 'man' and 'sanctuaries'",
+            "Directly communicates the concept of dedicated masculine spaces",
+            "Growing market niche as more homeowners invest in personalized spaces",
+            "Perfect for content marketing about home design trends",
+            "Excellent for e-commerce selling man cave furniture and accessories"
+        ],
+        premium: true,
+        price_tier: 3,
+        visit_site: "https://mantuaries.com"
+    },
     'appliancegarages.com': {
         category: "home-kitchen",
         subcategory: "appliances",
