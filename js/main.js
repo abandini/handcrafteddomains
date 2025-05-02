@@ -2,6 +2,17 @@
 
 // Domain Categories Structure
 const categories = {
+    "hot-spicy": {
+        name: "Hot & Spicy",
+        icon: "pepper-hot",
+        description: "Premium domains for spicy food brands, hot sauce makers, and fiery culinary experiences",
+        subcategories: {
+            "sauces": "Hot Sauces & Condiments",
+            "foods": "Spicy Foods & Snacks",
+            "restaurants": "Spicy Restaurants & Eateries",
+            "challenges": "Spicy Food Challenges"
+        }
+    },
     "home-kitchen": {
         name: "Home & Kitchen",
         icon: "home",
@@ -152,6 +163,28 @@ const categories = {
 
 // Domain Details Database
 const domainDetails = {
+    'jawmelters.com': {
+        category: "hot-spicy",
+        subcategory: "sauces",
+        story: "JawMelters.com is the perfect domain for brands specializing in extremely hot sauces, spicy condiments, and fiery food products. This memorable and descriptive name instantly communicates intense heat that will 'melt your jaw' - appealing to spice enthusiasts and hot sauce aficionados who are always seeking the next level of heat.",
+        targetList: [
+            "Craft hot sauce manufacturers",
+            "Spicy food product companies",
+            "Ghost pepper and Carolina Reaper product makers",
+            "Hot sauce subscription services",
+            "Spicy food challenge brands"
+        ],
+        features: [
+            "Instantly communicates extreme heat and intensity",
+            "Memorable and descriptive name that stands out",
+            "Appeals to the growing market of spice enthusiasts",
+            "Perfect for building a brand around extreme heat challenges",
+            "Great for content marketing about spicy foods and sauces"
+        ],
+        premium: true,
+        price_tier: 2,
+        visit_site: "https://jawmelters.com"
+    },
     'mantuaries.com': {
         category: "home-kitchen",
         subcategory: "furniture",
