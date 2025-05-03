@@ -2,6 +2,17 @@
 
 // Domain Categories Structure
 const categories = {
+    "y2k-luxe": {
+        name: "Y2K Luxe & Retro Accessories",
+        icon: "gem",
+        description: "Premium domains for Y2K-inspired fashion, retro luxury accessories, and nostalgic style brands",
+        subcategories: {
+            "y2k-fashion": "Y2K Fashion Revival",
+            "retro-accessories": "Retro Luxury Accessories",
+            "vintage-style": "Vintage Style Brands",
+            "nostalgic-luxury": "Nostalgic Luxury Items"
+        }
+    },
     "mood-decor": {
         name: "Mood-Boost Décor & Neuro-Aesthetic Living",
         icon: "brain",
@@ -174,6 +185,29 @@ const categories = {
 
 // Domain Details Database
 const domainDetails = {
+    'baguettebags.com': {
+        category: "y2k-luxe",
+        subcategory: "retro-accessories",
+        story: `<h3>Y2K-Inspired Luxury Handbag Revival</h3>
+        <p>BaguetteBags.com is the perfect domain for brands specializing in the iconic baguette-style handbags that defined Y2K fashion and are experiencing a massive revival in today's luxury accessory market.</p>
+        <p>This premium domain directly references the beloved silhouette made famous in the late 90s and early 2000s, positioning your brand at the intersection of nostalgic fashion and contemporary luxury.</p>
+        <p>With vintage and Y2K aesthetics continuing to dominate fashion trends, BaguetteBags.com offers an instantly recognizable brand identity for retailers, designers, and marketplaces focused on this lucrative niche.</p>`,
+        targetList: [
+            "Luxury handbag retailers and designers",
+            "Vintage and Y2K fashion marketplaces",
+            "Accessory brands focusing on nostalgic styles",
+            "Fashion influencers and content creators"
+        ],
+        features: [
+            "Instantly communicates product category",
+            "Capitalizes on the ongoing Y2K fashion revival",
+            "Perfect for SEO in the luxury handbag market",
+            "Appeals to both vintage collectors and trend-conscious shoppers"
+        ],
+        premium: true,
+        price_tier: 3,
+        visit_site: "https://baguettebags.com"
+    },
     'dopdec.com': {
         category: "mood-decor",
         subcategory: "neuro-design",
