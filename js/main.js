@@ -2,6 +2,17 @@
 
 // Domain Categories Structure
 const categories = {
+    "mindful-movement": {
+        name: "Mindful Movement & Awe-Driven Wellness",
+        icon: "walking",
+        description: "Premium domains for mindfulness practices, awe-inspired wellness, and transformative movement experiences",
+        subcategories: {
+            "mindful-walking": "Mindful Walking & Hiking",
+            "awe-wellness": "Awe-Driven Wellness",
+            "movement-therapy": "Movement Therapy",
+            "nature-connection": "Nature Connection Practices"
+        }
+    },
     "y2k-luxe": {
         name: "Y2K Luxe & Retro Accessories",
         icon: "gem",
@@ -185,6 +196,30 @@ const categories = {
 
 // Domain Details Database
 const domainDetails = {
+    'awewalks.com': {
+        category: "mindful-movement",
+        subcategory: "awe-wellness",
+        story: `<h3>Transformative Walking Experiences for Wellness & Awe</h3>
+        <p>AweWalks.com is the perfect domain for brands specializing in mindful walking experiences that inspire awe, wonder, and deep nature connection for improved mental and physical wellness.</p>
+        <p>This premium domain directly connects to the growing science-backed practice of awe walks - intentional walking experiences that cultivate a sense of wonder and perspective, shown to improve mental health and overall wellbeing.</p>
+        <p>With increasing interest in mindfulness practices and nature-based wellness solutions, AweWalks.com offers an instantly recognizable brand identity for wellness practitioners, tour operators, and mindfulness apps focused on this transformative practice.</p>`,
+        targetList: [
+            "Mindfulness and wellness practitioners",
+            "Nature tour operators and guides",
+            "Mental health and wellness apps",
+            "Outdoor recreation and hiking companies",
+            "Wellness retreat organizers"
+        ],
+        features: [
+            "Directly communicates the concept of awe-inspiring walking experiences",
+            "Connects to the growing research on awe as a wellness practice",
+            "Perfect for SEO in the mindfulness and wellness markets",
+            "Appeals to health-conscious consumers seeking nature connection"
+        ],
+        premium: true,
+        price_tier: 2,
+        visit_site: "https://awewalks.com"
+    },
     'baguettebags.com': {
         category: "y2k-luxe",
         subcategory: "retro-accessories",
