@@ -2,6 +2,17 @@
 
 // Domain Categories Structure
 const categories = {
+    "mood-decor": {
+        name: "Mood-Boost Décor & Neuro-Aesthetic Living",
+        icon: "brain",
+        description: "Premium domains for mood-enhancing décor, neuro-aesthetic design, and cognitive wellness living spaces",
+        subcategories: {
+            "mood-decor": "Mood-Enhancing Décor",
+            "neuro-design": "Neuro-Aesthetic Design",
+            "cognitive-spaces": "Cognitive Wellness Spaces",
+            "sensory-home": "Sensory Home Environments"
+        }
+    },
     "hot-spicy": {
         name: "Hot & Spicy",
         icon: "pepper-hot",
@@ -163,6 +174,29 @@ const categories = {
 
 // Domain Details Database
 const domainDetails = {
+    'dopdec.com': {
+        category: "mood-decor",
+        subcategory: "neuro-design",
+        story: `<h3>Dopamine-Boosting Décor for Cognitive Wellness</h3>
+        <p>DopDec.com represents the intersection of neuroscience and interior design, focusing on creating living spaces that naturally boost dopamine and enhance cognitive wellness.</p>
+        <p>This premium domain is perfect for brands specializing in mood-enhancing décor, neuro-aesthetic design principles, and products that create dopamine-optimized living environments.</p>
+        <p>As awareness of the impact of our surroundings on mental health continues to grow, DopDec.com positions your brand at the forefront of this emerging wellness category.</p>`,
+        targetList: [
+            "Interior design firms specializing in wellness",
+            "Manufacturers of mood-enhancing home products",
+            "Neuro-aesthetic consultants and designers",
+            "Mental wellness-focused home décor retailers"
+        ],
+        features: [
+            "Memorable and intuitive brand name",
+            "Directly communicates the dopamine-décor connection",
+            "Perfect for the growing neuro-aesthetic market",
+            "Ideal for content marketing about cognitive wellness in living spaces"
+        ],
+        premium: true,
+        price_tier: 2,
+        visit_site: "https://dopdec.com"
+    },
     'jawmelters.com': {
         category: "hot-spicy",
         subcategory: "sauces",
