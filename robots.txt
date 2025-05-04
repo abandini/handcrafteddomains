@@ -7,6 +7,7 @@ Allow: /about-us.html
 Allow: /privacy-policy.html
 Allow: /list-your-domain.html
 Allow: /box-domains/  # Allow crawling of box domains page
+Allow: /categories/  # Allow crawling of category pages
 Disallow: /thank-you.html  # No need to index the thank you page
 Disallow: /admin/  # Prevent indexing of any future admin areas
 Disallow: /css/  # No need to index CSS files
@@ -16,4 +17,4 @@ Disallow: /images/  # No need to index image files directly
 # Specify the location of the sitemap
 Sitemap: https://handcrafteddomains.io/sitemap.xml
 
-# Last updated: 2025-05-04
+# Last updated: 2025-05-04 (Added categories directory)
