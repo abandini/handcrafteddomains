@@ -1,0 +1,279 @@
+/* Category Pages Specific Styles */
+
+/* Breadcrumbs */
+.breadcrumbs {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 0.5rem;
+}
+
+.current-page {
+    font-weight: 600;
+}
+
+/* Category Hero Section */
+.category-hero {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    color: white;
+    padding: 4rem 0 3rem;
+    text-align: center;
+}
+
+.category-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+}
+
+/* Market Overview Section */
+.market-overview {
+    padding: 5rem 0;
+    background-color: #f8fafc;
+}
+
+.market-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    color: #3b82f6;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #4b5563;
+    font-size: 1rem;
+}
+
+.market-description {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+.market-description p {
+    margin-bottom: 1.5rem;
+}
+
+.market-description h3 {
+    color: #1e3a8a;
+    margin: 2rem 0 1rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: #3b82f6;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.benefit-card p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Featured Domains Section */
+.featured-domains {
+    padding: 5rem 0;
+    background-color: #f8fafc;
+}
+
+/* Use Cases Section */
+.use-cases {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.use-case {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.use-case h3 {
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.use-case p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 5rem 0;
+    background-color: #f8fafc;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.faq-item p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Related Categories */
+.related-categories {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.category-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.category-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #f3f4f6;
+    border-radius: 9999px;
+    color: #1f2937;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.category-link:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .market-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .benefits-grid,
+    .use-cases-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
