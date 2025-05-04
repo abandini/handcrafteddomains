@@ -481,5 +481,343 @@
       ]
     }
     </script>
+    <!-- Domain Detail Modals -->
+    <div id="domainDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Domain Details -->
+    <script>
+        // Get the modal
+        const modal = document.getElementById("domainDetailModal");
+        const modalContent = document.getElementById("modalContent");
+        const closeBtn = document.getElementsByClassName("close-modal")[0];
+        
+        // Domain details data
+        const domainDetails = {
+            "awewalks.com": {
+                name: "awewalks.com",
+                price: "$4,995",
+                category: "Mindful Movement & Awe-Driven Wellness",
+                description: "Perfect for brands specializing in mindful walking experiences that inspire awe, wonder, and deep nature connection for improved mental and physical wellness.",
+                benefits: [
+                    "Memorable and descriptive name that instantly communicates your value proposition",
+                    "Combines the powerful concepts of 'awe' and 'walks' into a single, intuitive domain",
+                    "Targets the growing market for transformative outdoor experiences",
+                    "Aligns with scientific research on the benefits of awe in nature"
+                ],
+                idealFor: [
+                    "Walking meditation programs",
+                    "Nature therapy providers",
+                    "Outdoor wellness retreats",
+                    "Mindfulness coaches specializing in movement",
+                    "Forest bathing experiences"
+                ],
+                marketInsight: "The science of awe is a rapidly growing field of research, with studies showing that awe-inspiring experiences in nature can reduce stress, improve mood, and enhance overall wellbeing. As more consumers seek meaningful outdoor experiences, businesses that facilitate awe through mindful movement are positioned for significant growth."
+            },
+            "mindfulwalkabout.com": {
+                name: "mindfulwalkabout.com",
+                price: "$3,995",
+                category: "Mindful Movement & Awe-Driven Wellness",
+                description: "Ideal for mindfulness coaches, walking meditation programs, and wellness practitioners focusing on movement as a path to greater awareness and mental health.",
+                benefits: [
+                    "Combines 'mindful' with 'walkabout' - a term that suggests journey and exploration",
+                    "Perfect for businesses that blend mindfulness with walking or hiking experiences",
+                    "Memorable and easy to pronounce and spell",
+                    "Positions your brand at the intersection of mindfulness and movement"
+                ],
+                idealFor: [
+                    "Walking meditation teachers",
+                    "Mindfulness retreats with movement components",
+                    "Wellness tourism providers",
+                    "Mental health professionals using walking therapy",
+                    "Corporate wellness programs"
+                ],
+                marketInsight: "The mindful movement market is expanding rapidly as more people recognize the benefits of combining physical activity with present-moment awareness. Walking meditation and mindful movement practices are becoming mainstream wellness activities, creating significant opportunities for specialized service providers."
+            },
+            "natureawed.com": {
+                name: "natureawed.com",
+                price: "$3,495",
+                category: "Mindful Movement & Awe-Driven Wellness",
+                description: "Perfect for nature-based wellness programs, ecotherapy services, and businesses focused on creating transformative outdoor experiences that inspire wonder and wellbeing.",
+                benefits: [
+                    "Evocative name that captures the feeling of being in awe of nature",
+                    "Positions your brand as a provider of transformative nature experiences",
+                    "Aligns with research on the psychological benefits of awe and nature connection",
+                    "Memorable and emotionally resonant"
+                ],
+                idealFor: [
+                    "Ecotherapy providers",
+                    "Nature retreats and experiences",
+                    "Outdoor wellness programs",
+                    "Environmental education with a wellness focus",
+                    "Forest bathing facilitators"
+                ],
+                marketInsight: "Nature therapy and ecotherapy are growing rapidly as healthcare providers recognize the mental and physical health benefits of nature connection. The 'awe in nature' niche is particularly promising, with research showing that experiences of awe can reduce inflammation, lower stress, and improve overall wellbeing."
+            },
+            "mindfulbounce.com": {
+                name: "mindfulbounce.com",
+                price: "$2,995",
+                category: "Mindful Movement & Awe-Driven Wellness",
+                description: "Perfect for rebounding fitness programs that incorporate mindfulness, meditation studios with trampoline classes, or wellness brands focusing on joyful movement and present-moment awareness.",
+                benefits: [
+                    "Unique combination of 'mindful' and 'bounce' creates an instantly memorable brand",
+                    "Captures the playful yet mindful aspect of rebounding fitness",
+                    "Stands out in the crowded wellness domain market",
+                    "Versatile enough for various movement modalities that involve bouncing or rebounding"
+                ],
+                idealFor: [
+                    "Rebounding fitness studios",
+                    "Mindful movement practitioners",
+                    "Trampoline yoga or meditation classes",
+                    "Children's mindfulness programs with movement",
+                    "Playful wellness brands"
+                ],
+                marketInsight: "Rebounding fitness is gaining popularity for its low-impact yet effective exercise benefits. When combined with mindfulness practices, it creates a unique wellness offering that appeals to those seeking both physical and mental health benefits in an enjoyable format."
+            },
+            "mindfulstrider.com": {
+                name: "mindfulstrider.com",
+                price: "$3,295",
+                category: "Mindful Movement & Awe-Driven Wellness",
+                description: "Ideal for walking meditation programs, mindful running coaches, hiking retreats, and outdoor fitness brands that combine purposeful movement with mental wellness and present-moment awareness.",
+                benefits: [
+                    "Clear and descriptive name that immediately conveys mindful walking/running",
+                    "Appeals to both casual walkers and serious runners seeking mindfulness",
+                    "Positions your brand as specialized in mindful movement outdoors",
+                    "Memorable and professional sounding"
+                ],
+                idealFor: [
+                    "Walking meditation programs",
+                    "Mindful running coaches and groups",
+                    "Hiking and trekking retreats with mindfulness components",
+                    "Outdoor fitness brands with a wellness focus",
+                    "Mental health professionals using walking therapy"
+                ],
+                marketInsight: "The mindful running and walking market is experiencing significant growth as more people seek to combine physical exercise with mental wellness. Research shows that mindful movement outdoors provides dual benefits for physical and mental health, creating a strong foundation for specialized wellness businesses."
+            }
+        };
+        
+        // Function to show domain details
+        function showDomainDetails(domainName) {
+            const domain = domainDetails[domainName];
+            if (!domain) return;
+            
+            let content = `
+                <div class="domain-detail-header">
+                    <h2>${domain.name}</h2>
+                    <div class="domain-price">${domain.price}</div>
+                </div>
+                <div class="domain-category">Category: ${domain.category}</div>
+                <div class="domain-description">
+                    <p>${domain.description}</p>
+                </div>
+                <div class="domain-benefits">
+                    <h3>Key Benefits</h3>
+                    <ul>
+            `;
+            
+            domain.benefits.forEach(benefit => {
+                content += `<li>${benefit}</li>`;
+            });
+            
+            content += `
+                    </ul>
+                </div>
+                <div class="domain-ideal-for">
+                    <h3>Ideal For</h3>
+                    <ul>
+            `;
+            
+            domain.idealFor.forEach(ideal => {
+                content += `<li>${ideal}</li>`;
+            });
+            
+            content += `
+                    </ul>
+                </div>
+                <div class="domain-market-insight">
+                    <h3>Market Insight</h3>
+                    <p>${domain.marketInsight}</p>
+                </div>
+                <div class="domain-cta">
+                    <button onclick="makeOffer('${domain.name}')" class="button-offer">Make Offer</button>
+                    <a href="mailto:info@handcrafteddomains.io?subject=Inquiry about ${domain.name}" class="button-contact">Contact Us</a>
+                </div>
+            `;
+            
+            modalContent.innerHTML = content;
+            modal.style.display = "block";
+        }
+        
+        // Close the modal when the user clicks on the close button
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // Close the modal when the user clicks anywhere outside of the modal content
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+        // Function to make an offer (placeholder for now)
+        function makeOffer(domainName) {
+            window.location.href = `../../list-your-domain.html?domain=${domainName}`;
+        }
+    </script>
+    
+    <!-- Modal Styles -->
+    <style>
+        /* Modal Background */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            background-color: #ffffff;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+        }
+        
+        /* Close Button */
+        .close-modal {
+            color: #aaa;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close-modal:hover,
+        .close-modal:focus {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        /* Domain Detail Styling */
+        .domain-detail-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 15px;
+        }
+        
+        .domain-detail-header h2 {
+            color: #1e40af;
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        .domain-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #047857;
+        }
+        
+        .domain-category {
+            color: #6b7280;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .domain-description p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .domain-benefits, .domain-ideal-for, .domain-market-insight {
+            margin-bottom: 25px;
+        }
+        
+        .domain-benefits h3, .domain-ideal-for h3, .domain-market-insight h3 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .domain-benefits ul, .domain-ideal-for ul {
+            padding-left: 20px;
+        }
+        
+        .domain-benefits li, .domain-ideal-for li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .domain-market-insight p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #4b5563;
+            background-color: #f0f9ff;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #1e40af;
+        }
+        
+        .domain-cta {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .button-contact {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #e0f2fe;
+            color: #1e40af;
+            border: 1px solid #1e40af;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .button-contact:hover {
+            background-color: #bfdbfe;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 95%;
+                padding: 20px;
+                margin: 10% auto;
+            }
+            
+            .domain-detail-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .domain-cta {
+                flex-direction: column;
+            }
+        }
+    </style>
 </body>
 </html>
