@@ -243,6 +243,32 @@ section > .container {
     border-color: #2563eb;
 }
 
+/* Related Domains Styling */
+.related-domains {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #e5e7eb;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.related-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #4b5563;
+}
+
+.related-domains a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.related-domains a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
 /* Domain Cards */
 .domain-grid {
     display: grid;
