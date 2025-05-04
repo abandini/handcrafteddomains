@@ -17,4 +17,4 @@ Disallow: /images/  # No need to index image files directly
 # Specify the location of the sitemap
 Sitemap: https://handcrafteddomains.io/sitemap.xml
 
-# Last updated: 2025-05-04 (Added categories directory)
+# Last updated: 2025-05-04 (Added domain detail pages and updated sitemap)
