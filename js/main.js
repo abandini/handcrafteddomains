@@ -1578,6 +1578,30 @@ const domainDetails = {
         ],
         premium: true,
         price_tier: 3
+    },
+    'digitalbudtenders.com': {
+        category: "cannabis",
+        subcategory: "cannabis-education",
+        story: `<h3>Virtual Cannabis Guidance for the Digital Age</h3>
+        <p>DigitalBudtenders.com is the perfect domain for businesses providing online cannabis education, virtual dispensary guidance, and digital budtender services in today's expanding cannabis market.</p>
+        <p>This premium domain combines the traditional role of knowledgeable dispensary staff with modern digital delivery, positioning your brand at the intersection of cannabis expertise and technology.</p>
+        <p>With increasing cannabis legalization and the growing need for reliable education, DigitalBudtenders.com offers an instantly recognizable brand identity for online platforms, apps, and services focused on guiding consumers through their cannabis journey.</p>`,
+        targetList: [
+            "Online cannabis education platforms",
+            "Virtual dispensary consultation services",
+            "Cannabis e-commerce with personalized guidance",
+            "Cannabis recommendation apps and tools",
+            "Budtender training and certification programs"
+        ],
+        features: [
+            "Clearly communicates the digital cannabis guidance concept",
+            "Appeals to both consumers and industry professionals",
+            "Perfect for SEO in the cannabis education market",
+            "Positions brand as innovative in the cannabis space"
+        ],
+        premium: true,
+        price_tier: 2,
+        visit_site: "https://digitalbudtenders.com"
     }
 };
 
