@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W09Z4K14ZZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W09Z4K14ZZ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Checkout - Handcrafted Domains</title>
+    <meta name="description" content="Secure checkout process for your premium domain purchase at Handcrafted Domains.">
+    <meta name="author" content="Handcrafted Domains">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://handcrafteddomains.io/checkout/">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="checkout.css">
+    
+    <!-- Titillium Web Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Plausible Analytics -->
+    <script defer data-domain="handcrafteddomains.io" src="https://plausible.io/js/script.js"></script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '123456789012345');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Google Remarketing Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-123456789"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-123456789');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="checkout-header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Handcrafted Domains Logo">
+                </a>
+            </div>
+            <div class="checkout-steps">
+                <div class="step active">
+                    <span class="step-number">1</span>
+                    <span class="step-name">Cart</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span class="step-name">Escrow Details</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-name">Confirmation</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-content">
+                <div class="checkout-cart">
+                    <h2>Your Cart</h2>
+                    <div class="cart-items">
+                        <div class="cart-item" id="domain-item">
+                            <!-- Domain details will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Domain Price:</span>
+                            <span id="domain-price">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Escrow Fee:</span>
+                            <span id="escrow-fee">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="total-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="checkout-sidebar">
+                    <div class="checkout-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Domain:</span>
+                            <span id="sidebar-domain">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Price:</span>
+                            <span id="sidebar-price">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Escrow Fee:</span>
+                            <span id="sidebar-fee">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="sidebar-total">$0.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-options">
+                        <h3>Payment Options</h3>
+                        <div class="payment-option">
+                            <input type="radio" id="full-payment" name="payment-type" value="full" checked>
+                            <label for="full-payment">Full Payment</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="monthly-payment" name="payment-type" value="monthly">
+                            <label for="monthly-payment">Monthly Plan</label>
+                            <div class="monthly-details" id="monthly-details">
+                                <p>12 monthly payments of <span id="monthly-amount">$0.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="proceed-btn" class="button button-primary">Proceed to Escrow</button>
+                    
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <img src="../images/escrow-badge.svg" alt="Escrow.com Verified">
+                            <span>Secure Escrow Transaction</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>30-day Satisfaction Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" align="center">
+            <p>&copy; 2025 Handcrafted Domains. All rights reserved.</p>
+            <p>Secure transactions powered by Escrow.com</p>
+            <p class="footer-links">
+                <a href="../about-us.html">About Us</a>
+                <span class="footer-divider">|</span>
+                <a href="../more-domains.html">Marketplace</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy-policy.html">Privacy Policy</a>
+                <span class="footer-divider">|</span>
+                <a href="../index.html#domains">Domain Portfolio</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+    
+    <!-- JSON-LD Product Schema -->
+    <script type="application/ld+json" id="product-schema">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "",
+      "description": "",
+      "offers": {
+        "@type": "Offer",
+        "price": "",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": ""
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "Handcrafted Domains",
+        "logo": "https://handcrafteddomains.io/images/logo.png"
+      }
+    }
+    </script>
+</body>
+</html>
