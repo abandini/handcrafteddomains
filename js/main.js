@@ -196,6 +196,36 @@ const categories = {
 
 // Domain Details Database
 const domainDetails = {
+    'cayumin.com': {
+        category: "hot-spicy",
+        subcategory: "sauces",
+        story: `<h3>Ignite Your Brand with CayuMin.com</h3>
+        <p>Cayumin.com is a sizzling hot domain that combines the fiery essence of cayenne pepper with the concept of minimalism - a perfect match for brands that deliver maximum flavor with no unnecessary additives. This memorable name suggests a clean, potent, and powerful approach to spicy foods and hot sauces.</p>
+        
+        <h4>Why Choose CayuMin.com?</h4>
+        <p>In the booming hot sauce and spicy foods market, standing out is crucial. CayuMin.com offers a unique blend of:</p>
+        <ul>
+            <li>Memorable, brandable name with a clear connection to heat and spice</li>
+            <li>Versatility across multiple product categories from hot sauces to spicy snacks</li>
+            <li>Strong potential for creative branding and marketing campaigns</li>
+            <li>Easy to spell and pronounce, making it highly marketable</li>
+        </ul>
+        
+        <h4>Market Potential</h4>
+        <p>The hot sauce market is experiencing explosive growth, with consumers increasingly seeking bolder flavors and artisanal, small-batch products. CayuMin.com positions your brand perfectly in this space, whether you're launching a new hot sauce line, spicy snack brand, or culinary experience.</p>
+        
+        <div class="market-insight">
+            <h4>Market Insight</h4>
+            <p>The global hot sauce market is projected to reach $4.38 billion by 2028, growing at a CAGR of 7.5%. Consumers are increasingly seeking unique, high-quality spicy products with clean labels and premium ingredients - making this the perfect time to establish your brand with CayuMin.com.</p>
+        </div>`,
+        targetList: [
+            "Hot sauce brands looking for a memorable, brandable name",
+            "Artisanal food producers creating spicy products",
+            "Food bloggers and influencers in the spicy food niche",
+            "Restaurants and food trucks specializing in bold flavors",
+            "Subscription box services for spicy food enthusiasts"
+        ]
+    },
     'abhyasa.io': {
         category: "mindful-movement",
         subcategory: "movement-therapy",
