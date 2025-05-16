@@ -196,6 +196,30 @@ const categories = {
 
 // Domain Details Database
 const domainDetails = {
+    'abhyasa.io': {
+        category: "mindful-movement",
+        subcategory: "movement-therapy",
+        story: `<h3>Mindful Movement & Yogic Self-Development</h3>
+        <p>Abhyasa.io is the perfect domain for brands specializing in mindful movement practices, yoga philosophy, and holistic self-development through dedicated practice.</p>
+        <p>This premium domain draws from the Sanskrit term "abhyasa" - meaning dedicated, consistent practice - a core concept in yoga philosophy representing the sustained effort required for transformation and growth.</p>
+        <p>With growing interest in authentic yoga practices and mindful movement beyond physical postures, Abhyasa.io offers an instantly recognizable brand identity for practitioners, teachers, and platforms focused on the deeper dimensions of movement as a transformative practice.</p>`,
+        targetList: [
+            "Yoga teachers and mindful movement practitioners",
+            "Meditation and mindfulness platforms",
+            "Holistic wellness educators",
+            "Movement therapy professionals",
+            "Yoga philosophy and education platforms"
+        ],
+        features: [
+            "Authentic Sanskrit term with deep philosophical meaning",
+            "Connects to the essence of dedicated practice and self-transformation",
+            "Modern .io extension perfect for digital platforms and apps",
+            "Appeals to seekers of authentic, transformative movement practices"
+        ],
+        premium: true,
+        price_tier: 2,
+        visit_site: "https://abhyasa.io"
+    },
     'awewalks.com': {
         category: "mindful-movement",
         subcategory: "awe-wellness",
